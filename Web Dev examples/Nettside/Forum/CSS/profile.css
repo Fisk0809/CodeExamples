@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  background-image: url(../Images/nebula.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+.delete {
+  width: 100%;
+  background-color: rgba(214, 24, 24, 0.89);
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.delete:hover {
+  background-color:rgba(255, 255, 255, 0.8);
+  color: black;
+}
+
+.panel {
+  display: block;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(39, 39, 39, 0.877); /* Black w/opacity/see-through */
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  border: 0.5px solid #bebebe;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 2;
+  width: 250px;
+  padding: 2%;
+  text-align: left;
+  border-radius: 5px;
+}
+
+
+.panel .input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  background-color:rgb(27, 27, 27);
+  border: 1px solid#bebebe;
+  color: white;
+  font-weight: bold;
+
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.panel .input:focus-visible {
+  outline: none !important;
+  border-color: rgb(1, 116, 248)
+}
+
+.submit {
+  height: 2.9em;
+  width: 100%;
+  background-color: rgb(49, 49, 49);
+  color: white;
+  padding: 14px 20px;
+  border: 1px solid#bebebe;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.submit:hover {
+  background-color:#ffffff;
+  border: 1px solid #000;  
+  color: black;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+-webkit-text-fill-color: rgb(255, 255, 255);
+-webkit-box-shadow: 0 0 0px 1000px rgb(27,27,27) inset;
+box-shadow: 0 0 0px 1000px rgb(27,27,27) inset;
+transition: background-color 5000s ease-in-out 0s;
+}
+
+
+.confirm {
+  color:rgb(169, 255, 251);
+  font-size:14px;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.editbtn {
+  text-align: center;
+  height: 2.9em;
+  width: 100%;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 14px 20px;
+  border: 1px solid rgb(49,49,49);
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.editbtn:hover {
+  background-color:rgb(49,49,49);
+  border: 1px solid #bebebe;
+  color: white;
+}

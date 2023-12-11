@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  overflow: hidden;
+  
+}
+
+.tables {
+  font-weight: bold;
+  margin-left:-5px;
+  margin-right:-5px;
+}
+
+.table {
+  font-weight: bold;
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.panel {
+  display: block;
+  background-color: rgb(0,0,0);
+  background-color: rgba(39, 39, 39, 0.877); 
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  border: 0.5px solid #bebebe;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 2;
+  width: 250px;
+  padding: 2%;
+  text-align: left;
+  border-radius: 5px;
+}
+
+
+body, html {
+  background-image: url(../Images/astrophysics.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  backdrop-filter: blur(8px)
+}
+
+
+.flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.flex-child {
+  -webkit-box-flex: 1 1 auto;
+  -moz-box-flex:  1 1 auto;
+  -webkit-flex:  1 1 auto;
+  -ms-flex:  1 1 auto;
+  flex:  1 1 auto;
+  height: 40px;
+  background-color: rgba(8, 36, 131, 0.753);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.flex-child:hover {
+  background-color: rgba(21, 64, 204, 0.753);
+}
+h4 {
+  text-align: center;
+
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  color: white;
+}
+
+th, td {
+  font-weight: bold;
+  text-align: center;
+  padding: 16px;
+  border: 1px solid;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(0,0,0);
+  background-color: rgba(39, 39, 39, 0);
+}
+
+
+th {
+  background-color: rgb(0,0,0);
+  background-color: rgba(4, 70, 250, 0.199);
+}
+.error {
+  text-align: center;
+  color: red;
+}
+
+.reset {
+  background-color: rgba(184, 2, 2, 0.644);
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+}
+
+.reset:hover {
+  background-color: rgba(255, 0, 0, 0.644) ;
+}
+
+.confirm {
+  text-align: center;
+  color:rgb(27, 145, 255);
+}
