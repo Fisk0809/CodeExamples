@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lese fil</title>
+    <link rel="stylesheet" href="lese-fil.css">
+</head>
+<body>
+	<div class="wrapper">
+        <div class="wrapper-content">
+            <h1 id='instruction'>Drag and drop or select file here:</h1>
+            <input class="input" id="input" type="file">
+            <h1 id="header"></h1>
+            <button id="btn" onclick="removebutton()">Klikk for visning</button>
+            <pre id="txt"></pre>
+            <script src="./lese-fil.js"></script>
+        </div>
+    </div>
+
+    <script>
+        function removebutton() {
+            var button = document.getElementById("btn");
+
+            button.style.display ="none";
+        }
+    </script>
+</body>
+</html>

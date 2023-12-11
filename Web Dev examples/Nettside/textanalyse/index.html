@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tekstanalyse</title>
+</head>
+<body>
+    <h3 id='instruks'>Velg fil du vil lese:</h3>
+    <input id="valg" type="file" name="fname">
+    <button id="knapp">Start</button>
+    <h3 id="valgtFil"></h3>
+    <pre id="txt"></pre>
+    <div id='hidden'>
+        <form id='IPskjema' action='get-log-data.php' method='post'>
+            <input type='text' id='ip' name='ip'>
+            <input type='text' id='count' name='count'>
+        </form>
+    </div>
+
+<script src="readfile.js"></script>
+</body>
+</html>
